@@ -1,0 +1,20 @@
+{
+
+"name": "Ebucks Chrome Extension",
+
+"description": "Hides non discounted items",
+
+"version": "1.0",
+
+"manifest_version": 3, 
+
+"content_scripts": [
+	  {
+		"matches": [
+		  "https://www.ebucks.com/web/shop/*"
+		],
+		"js": ["jquery-3.6.1.min.js", "content.js"]
+	  }
+	]
+
+}
